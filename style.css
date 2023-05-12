@@ -1,0 +1,150 @@
+body {
+  background-image: url('rumah bolon/rb4.jpg');
+  background-attachment: fixed;
+  background-size: 100% 100%; 
+  overflow-x: hidden;
+}
+
+.moving-title {
+  position: relative;
+  animation: move-in 2s forwards;
+}
+
+@keyframes move-in {
+  0% {
+    right: -100%;
+  }
+  100% {
+    right: -70%;
+  }
+}
+
+b {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #666;
+  margin-bottom: 20px;
+  float: right;
+  animation: slide-in-bold 3s ease-out;
+}
+
+@keyframes slide-in-bold {
+  0% {
+    transform: translateX(100%); /* mulai dari sisi kanan */
+  }
+  100% {
+    transform: translateX(0); /* geser ke sisi kiri */
+  }
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 100%;
+  width: 50%;
+  height: 100%;
+  background-image: url('putih.png');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.5;
+  animation: slide-in-overlay 2s forwards ease-in-out;
+  z-index: 1;
+}
+
+@keyframes slide-in-overlay {
+  0% {
+    left: 100%; /* mulai dari sisi kanan */
+  }
+  100% {
+    left: 50%; /* geser ke sisi kiri */
+  }
+}
+
+  /* style untuk sidebar */
+  .sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 150px;
+    height: 100%;
+    background-color: #000000;
+    padding: 20px;
+  }
+  
+  .sidebar a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .dropdown {
+    width: 130px;
+    padding: 10px 20px;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .dropdown-menu {
+    position: absolute;
+    background-color: #0060f1;
+    width: 130px;
+    padding: 10px 20px;
+    left: 130px;
+    top: 0;
+    border-radius: 10px;
+    box-shadow: 2px 3px 10px rgb(84, 84, 84);
+    display: none;
+  }
+  
+  .dropdown-menu p {
+    margin: 5px 0px;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  .dropdown-menu p:hover {
+    background-color: #fff;
+    color: #1964e6;
+  }
+  
+  .dropdown:hover > .dropdown-menu {
+    display: block;
+  }
+  
+  /* add styles for nested dropdowns */
+  .dropdown-menu .dropdown {
+    width: auto;
+    padding: 0;
+    margin: 5px 0;
+  }
+  
+  .dropdown-menu .dropdown:hover > .dropdown-menu {
+    display: block;
+    top: 0;
+    left: 130px;
+    border-radius: 5px;
+  }
+  
+  .dropdown-menu .dropdown-menu {
+    top: 0;
+    left: 130px;
+    border-radius: 5px;
+    display: none;
+  }
+  
+  .dropdown-menu .dropdown-menu p {
+    margin: 0;
+    padding: 5px 10px;
+  }
+  
+  .dropdown-menu .dropdown-menu p:hover {
+    background-color: #fff;
+    color: #b50606;
+  }
+  
+  .dropdown-menu .dropdown-menu .dropdown:hover > .dropdown-menu {
+    display: block;
+    top: 0;
+    left: 130px;
+    border-radius: 5px;
+  }
