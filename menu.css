@@ -25,9 +25,7 @@ h1 {
   
   /* style untuk konten utama */
 main {
-  margin-left: 200px;
-  width: calc(100% - 200px);
-  padding: 20px;
+  margin-left: 150px;
   background-color: #FFFFFF;
   }
 
@@ -123,7 +121,7 @@ main {
     .slide {
       position: relative;
       margin: 0 auto;
-      width: 1000px;
+      width: 450px;
       height: 490px;
       overflow: hidden;
       }
@@ -210,38 +208,13 @@ a:hover {
     }         
     
     .container {
-      width: 980px;
       margin: auto;
     }
-    
-    .container .article .kiri .slide {
-      position: absolute;
-      left: 11%; /* slide akan berada pada posisi 20% dari sisi kiri container */
-      top: 210px; /* slide akan berada pada posisi 50 piksel dari sisi atas container */
-    }    
-    
-    .container .article .kanan {
-      width: 450px;
-      display: block; /* hilangkan display flex */
-      padding: 230px;
-      padding-top: 0px;
-      float: right; /* posisikan elemen ke sebelah kanan */
-    }
-    
-    .container .article .kanan p {
-      color: rgb(0, 0, 0);
-      text-align: left;
-      margin-bottom: 1em;
-      line-height: 1.0; /* jarak antar baris menjadi lebih tipis */
-      width: 800px; /* lebar paragraf menjadi lebih pendek */
-      background-color: #dddddd; /* warna background abu-abu */
-      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* tambahkan box shadow */
-    }
-  
-    
-    
-    
-    
-    
-    
-    
+
+
+@media only screen and (min-width: 1200px) {
+  .article{
+    /** use display flex LOL **/
+    display : flex;
+  }
+}

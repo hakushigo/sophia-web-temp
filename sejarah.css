@@ -121,7 +121,7 @@
       .slide {
         position: relative;
         margin: 0 auto;
-        width: 1000px;
+        width: 450px;
         height: 490px;
         overflow: hidden;
         }
@@ -211,7 +211,10 @@
         margin: auto;
       }
 
-.article{
+
+@media only screen and (min-width: 1200px) {
+  .article{
     /** use display flex LOL **/
     display : flex;
+}
 }
